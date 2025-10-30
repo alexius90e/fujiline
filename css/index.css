@@ -585,5 +585,157 @@ textarea {
 }
 
 .demonstration {
-  display: none;
+  padding: 87px 0 113px;
+  background: url(../assets/demonstration-bg.svg) bottom center/100% no-repeat;
+}
+@media (max-width: 1024px) {
+  .demonstration {
+    padding: 50px 0;
+    background-size: 1200px;
+  }
+}
+.demonstration__container {
+  position: relative;
+  max-width: 1374px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.demonstration__info {
+  position: relative;
+  z-index: 10;
+  max-width: 746px;
+}
+@media (max-width: 1440px) {
+  .demonstration__info {
+    max-width: 560px;
+  }
+}
+@media (max-width: 1024px) {
+  .demonstration__info {
+    max-width: none;
+  }
+}
+@media (max-width: 576px) {
+  .demonstration__info {
+    max-width: 420px;
+    margin: 0 auto;
+  }
+}
+.demonstration__info-title {
+  margin: 0;
+  font-weight: 700;
+  font-size: 41px;
+  line-height: 130%;
+  letter-spacing: -0.02em;
+  color: #522f69;
+}
+@media (max-width: 1024px) {
+  .demonstration__info-title {
+    font-size: 36px;
+  }
+}
+@media (max-width: 576px) {
+  .demonstration__info-title {
+    font-size: 24px;
+    text-align: center;
+  }
+}
+.demonstration__info-description {
+  max-width: 316px;
+  margin: 30px 0 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 140%;
+  color: rgba(82, 47, 105, 0.7);
+}
+@media (max-width: 1024px) {
+  .demonstration__info-description {
+    font-size: 16px;
+  }
+}
+@media (max-width: 1024px) {
+  .demonstration__info-description {
+    max-width: 230px;
+    padding-left: 12px;
+  }
+}
+.demonstration__info-signup {
+  margin: 40px 0 0;
+}
+@media (max-width: 1024px) {
+  .demonstration__info-signup {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 110px;
+  }
+}
+.demonstration__info-signup-button {
+  display: inline-block;
+  padding: 33px 54px;
+  font-weight: 700;
+  font-size: 16px;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  background-color: #522f69;
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-timing-function: ease-out;
+          transition-timing-function: ease-out;
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+}
+@media (max-width: 576px) {
+  .demonstration__info-signup-button {
+    padding: 32px;
+  }
+}
+.demonstration__info-signup-button:hover {
+  background-color: #3e1e54;
+}
+.demonstration__figure {
+  position: absolute;
+  right: -20px;
+  bottom: -40px;
+  margin: 0;
+}
+@media (max-width: 1440px) {
+  .demonstration__figure {
+    right: 80px;
+  }
+}
+@media (max-width: 1024px) {
+  .demonstration__figure {
+    bottom: 100px;
+  }
+}
+@media (max-width: 576px) {
+  .demonstration__figure {
+    right: 30px;
+  }
+}
+.demonstration__figure-image {
+  display: block;
+  max-width: 100%;
+  width: 800px;
+  height: auto;
+}
+@media (max-width: 1440px) {
+  .demonstration__figure-image {
+    width: 600px;
+  }
+}
+@media (max-width: 1024px) {
+  .demonstration__figure-image {
+    width: 180px;
+  }
 }

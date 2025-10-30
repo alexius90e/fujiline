@@ -1,3 +1,140 @@
 .demonstration {
-  display: none;
+  padding: 87px 0 113px;
+  background: url(../assets/demonstration-bg.svg) bottom center / 100% no-repeat;
+
+  @include laptop {
+    padding: 50px 0;
+    background-size: 1200px;
+  }
+
+  &__container {
+    position: relative;
+    max-width: 1374px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+
+  &__info {
+    position: relative;
+    z-index: 10;
+    max-width: 746px;
+
+    @include desktop {
+      max-width: 560px;
+    }
+
+    @include laptop {
+      max-width: none;
+    }
+
+    @include mobile {
+      max-width: 420px;
+      margin: 0 auto;
+    }
+
+    &-title {
+      margin: 0;
+      font-weight: 700;
+      font-size: 41px;
+      line-height: 130%;
+      letter-spacing: -0.02em;
+      color: #522f69;
+
+      @include laptop {
+        font-size: 36px;
+      }
+
+      @include mobile {
+        font-size: 24px;
+        text-align: center;
+      }
+    }
+
+    &-description {
+      max-width: 316px;
+      margin: 30px 0 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 140%;
+      color: rgba(82, 47, 105, 0.7);
+
+      @include laptop {
+        font-size: 16px;
+      }
+
+      @include laptop {
+        max-width: 230px;
+        padding-left: 12px;
+      }
+    }
+
+    &-signup {
+      margin: 40px 0 0;
+
+      @include laptop {
+        display: flex;
+        justify-content: center;
+        margin-top: 110px;
+      }
+
+      &-button {
+        display: inline-block;
+        padding: 33px 54px;
+        font-weight: 700;
+        font-size: 16px;
+        color: #fff;
+        border: none;
+        border-radius: 10px;
+        background-color: #522f69;
+        transition-property: background-color;
+        transition-timing-function: ease-out;
+        transition-duration: 0.2s;
+
+        @include mobile {
+          padding: 32px;
+        }
+
+        &:hover {
+          background-color: #3e1e54;
+        }
+      }
+    }
+  }
+
+  &__figure {
+    position: absolute;
+    right: -20px;
+    bottom: -40px;
+    margin: 0;
+
+    @include desktop {
+      right: 80px;
+    }
+
+    @include laptop {
+      bottom: 100px;
+    }
+
+    @include mobile {
+      right: 30px;
+    }
+
+    &-image {
+      display: block;
+      max-width: 100%;
+      width: 800px;
+      height: auto;
+
+      @include desktop {
+        width: 600px;
+      }
+
+      @include laptop {
+        width: 180px;
+      }
+    }
+  }
 }
